@@ -1,0 +1,19 @@
+#Data types:
+Numeric data types:
+.int
+.float
+.complex
+
+->Sequence Data types:
+1.String:Collection f elements enclosed in single or double quotes '',"".
+2.list:It is the collection of element enclosed with the square braces[].(it is a mutable)
+3.Tuple:Is a coolecton of elements enclosed between the paranthasis.()(it us immutable)
+common: all are in order
+
+->Mapping Data types:
+-Set:Collection of elements enclosed between curly braces{}
+      .Not allowed dublicates
+      .Unordered
+      .Mutable
+      .hetiroginisis
+      .

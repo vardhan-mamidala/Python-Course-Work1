@@ -1,0 +1,115 @@
+Python 3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+a = 12
+type(a)
+<class 'int'>
+b = 13.4
+type(b)
+<class 'float'>
+c = 12+4j
+type(c)
+<class 'complex'>
+c = 12+6J
+c
+(12+6j)
+# string list tuple
+s 'Codegnan'
+SyntaxError: invalid syntax
+s = 'Codegnan'
+id(s)
+1597541758832
+s += 'Python'
+s
+'CodegnanPython'
+id(s)
+1597524182448
+s='aaaaaaaaa'
+s
+'aaaaaaaaa'
+type(s)
+<class 'str'>
+1 = [1,2,3,4,5,6]
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+1 = [1,2,3,4,5,6]
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+l = [1,2,3,4,5,6]
+type(l)
+<class 'list'>
+id(l)
+1597541648768
+l.append(12)
+l
+[1, 2, 3, 4, 5, 6, 12]
+id(l)
+1597541648768
+l = [1,12.3,"str",[1,2,3]]
+l
+[1, 12.3, 'str', [1, 2, 3]]
+type(l)
+<class 'list'>
+t=(1,2,,3,45)
+SyntaxError: invalid syntax
+t=(1,2,3,45)
+type(t)
+<class 'tuple'>
+t
+(1, 2, 3, 45)
+t=(1,1,1,1,1,)
+t
+(1, 1, 1, 1, 1)
+t=(1,12.3,4,'c')
+t
+(1, 12.3, 4, 'c')
+#set dict
+s = (1,1,25,45,56,57,78,77,79)
+s
+(1, 1, 25, 45, 56, 57, 78, 77, 79)
+id(s)
+1597540804160
+s.add(20)
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    s.add(20)
+AttributeError: 'tuple' object has no attribute 'add'
+>>> s= {80,70,24,24,25,78}
+>>> s
+{80, 70, 24, 25, 78}
+>>> id(s)
+1597541344288
+>>> s.add{20}
+SyntaxError: invalid syntax
+>>> s.add(20)
+>>> s
+{80, 20, 70, 24, 25, 78}
+>>> id(s)
+1597541344288
+>>> a=(1.12.3,"str"}
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '('
+>>> a={1,12.3,"str"}
+>>> a
+{1, 'str', 12.3}
+>>> set(s)
+{80, 20, 70, 24, 25, 78}
+>>> type(s)
+<class 'set'>
+>>> d = {'productname':'XYZ','pric':876,'stock':True}
+>>> d
+{'productname': 'XYZ', 'pric': 876, 'stock': True}
+>>> d
+{'productname': 'XYZ', 'pric': 876, 'stock': True}
+>>> s={1,2,3,4}
+>>> s = frozenset({1,1,1,116,18,2,3})
+>>> s
+frozenset({1, 2, 3, 18, 116})
+>>> a =True
+>>> b = False
+>>> type(a)
+<class 'bool'>
+>>> a={}
+>>> l=[]
+>>> t=()
+>>> s=''
+>>> s = None
+>>> s
+>>> type(s)
+<class 'NoneType'>
