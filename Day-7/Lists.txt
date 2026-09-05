@@ -1,0 +1,227 @@
+Python 3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+#lists
+l = []
+l = list()
+type(l)
+<class 'list'>
+l = [1,12.3,"str",True,[1,2,3],(1,2,3),{1,2,3},{1:1,2:2,3:3},3+8j]
+l
+[1, 12.3, 'str', True, [1, 2, 3], (1, 2, 3), {1, 2, 3}, {1: 1, 2: 2, 3: 3}, (3+8j)]
+l=[1,1,1,1]
+l
+[1, 1, 1, 1]
+a = [1,2,3,4]
+b = [2,3,5,4]
+a+b
+[1, 2, 3, 4, 2, 3, 5, 4]
+a*3
+[1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
+a=[567,76,13,433,134,234]
+a
+[567, 76, 13, 433, 134, 234]
+a[1]
+76
+a[2]
+13
+a[3]
+433
+a[0]
+567
+a[-1]
+234
+a[2:4]
+[13, 433]
+a[::-1]
+[234, 134, 433, 13, 76, 567]
+a[:4]
+[567, 76, 13, 433]
+a[-2:-4:-1]
+[134, 433]
+76 is in a
+SyntaxError: invalid syntax
+73 in a
+False
+76 in a
+True
+134 not in a
+False
+98 not in a
+True
+max(a)
+567
+min(a)
+13
+sorted(a)
+[13, 76, 134, 234, 433, 567]
+len(a)
+6
+a
+[567, 76, 13, 433, 134, 234]
+id(a)
+2053275577856
+a.append(3)
+a
+[567, 76, 13, 433, 134, 234, 3]
+a.append(4)
+a
+[567, 76, 13, 433, 134, 234, 3, 4]
+a.append(5)
+a
+[567, 76, 13, 433, 134, 234, 3, 4, 5]
+a.insert(2,30)
+a
+[567, 76, 30, 13, 433, 134, 234, 3, 4, 5]
+a.insert(4,25)
+a
+[567, 76, 30, 13, 25, 433, 134, 234, 3, 4, 5]
+a.extend([1,4])
+a
+[567, 76, 30, 13, 25, 433, 134, 234, 3, 4, 5, 1, 4]
+a.pop(3)
+13
+a
+[567, 76, 30, 25, 433, 134, 234, 3, 4, 5, 1, 4]
+a.pop(12)
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    a.pop(12)
+IndexError: pop index out of range
+a.pop(4)
+433
+a
+[567, 76, 30, 25, 134, 234, 3, 4, 5, 1, 4]
+a[0]=56
+a
+[56, 76, 30, 25, 134, 234, 3, 4, 5, 1, 4]
+a[5]=34
+a
+[56, 76, 30, 25, 134, 34, 3, 4, 5, 1, 4]
+a
+[56, 76, 30, 25, 134, 34, 3, 4, 5, 1, 4]
+a[5] = 34
+a
+[56, 76, 30, 25, 134, 34, 3, 4, 5, 1, 4]
+a[-7] = 34
+a[4] = 34
+a
+[56, 76, 30, 25, 34, 34, 3, 4, 5, 1, 4]
+a.pop(3)
+25
+a
+[56, 76, 30, 34, 34, 3, 4, 5, 1, 4]
+a.pop(2)
+30
+a
+[56, 76, 34, 34, 3, 4, 5, 1, 4]
+a.remove(34)
+a
+[56, 76, 34, 3, 4, 5, 1, 4]
+a.remove(3)
+a
+[56, 76, 34, 4, 5, 1, 4]
+a.remove(5,1,4)
+Traceback (most recent call last):
+  File "<pyshell#69>", line 1, in <module>
+    a.remove(5,1,4)
+TypeError: list.remove() takes exactly one argument (3 given)
+a.del[2]
+SyntaxError: invalid syntax
+del[2]
+SyntaxError: cannot delete literal
+del [4]
+SyntaxError: cannot delete literal
+del a[2]
+a
+[56, 76, 4, 5, 1, 4]
+del a[0,2,3]
+Traceback (most recent call last):
+  File "<pyshell#75>", line 1, in <module>
+    del a[0,2,3]
+TypeError: list indices must be integers or slices, not tuple
+del a[0:2:4]
+a
+[76, 4, 5, 1, 4]
+a.clear()
+
+a
+[]
+a = [56, 76, 34, 34, 3, 4, 5, 1, 4]
+a
+[56, 76, 34, 34, 3, 4, 5, 1, 4]
+a.index(34)
+2
+a
+[56, 76, 34, 34, 3, 4, 5, 1, 4]
+a.count()
+Traceback (most recent call last):
+  File "<pyshell#85>", line 1, in <module>
+    a.count()
+TypeError: list.count() takes exactly one argument (0 given)
+a.count(3)
+1
+a.count(34)
+2
+a = [1,2,3,4]
+a
+[1, 2, 3, 4]
+b = a
+b
+[1, 2, 3, 4]
+b.append(7)
+b
+[1, 2, 3, 4, 7]
+a
+[1, 2, 3, 4, 7]
+b
+[1, 2, 3, 4, 7]
+c = a.copy()
+c
+[1, 2, 3, 4, 7]
+a.append(12)
+c
+[1, 2, 3, 4, 7]
+c.append(12)
+>>> c
+[1, 2, 3, 4, 7, 12]
+>>> a
+[1, 2, 3, 4, 7, 12]
+>>> a.remove(12)
+>>> a
+[1, 2, 3, 4, 7]
+>>> c
+[1, 2, 3, 4, 7, 12]
+>>> any([1,'',False,[],(,{},set{}]0
+...      
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+>>> any([1,'',False,[],(,{},set{}])
+...     
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+>>> any([1,'',False,[],{},set()])
+...     
+True
+>>> any([0,'',False,[],{},set{}])
+... 
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> 
+... any([0,'',False,[],{},set()])
+... 
+False
+>>> a
+...     
+[1, 2, 3, 4, 7]
+>>> l.sort()
+...     
+>>> l
+...     
+[1, 1, 1, 1]
+>>> a.sort()
+...     
+>>> a
+...     
+[1, 2, 3, 4, 7]
+>>> a.reverse()
+...     
+>>> a
+...     
+[7, 4, 3, 2, 1]
