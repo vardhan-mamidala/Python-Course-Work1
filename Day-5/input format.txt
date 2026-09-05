@@ -1,0 +1,129 @@
+Python 3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+#int float complex str list tuple set dict bool
+a = input()
+codegnan
+a
+'codegnan'
+a = input()
+1234
+a
+'1234'
+a = input("Enter the values: ")
+Enter the values: 1234567
+a
+'1234567'
+marks = input("Enter the  marks: ")
+Enter the  marks: 90
+marks
+'90'
+price = float(input("Enter the price: "))
+Enter the price: 12.34
+price
+12.34
+cgpa = float(input("Enter the cgpa: "))
+Enter the cgpa: cgpa
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    cgpa = float(input("Enter the cgpa: "))
+ValueError: could not convert string to float: 'cgpa'
+cgpa = float(input("Enter the cgpa: "))
+Enter the cgpa: 9.8
+cgpa
+9.8
+#input for taking list
+names = tuple(input().split())
+vardhan ramu jayanth
+names
+('vardhan', 'ramu', 'jayanth')
+course = 'python-java-c++-flask'
+course.split('-')
+['python', 'java', 'c++', 'flask']
+softskills = 'communication quicklearner'
+softskills.split('-')
+['communication quicklearner']
+names = input("Enter the names: ").split()
+Enter the names: vardhan ramu jayanth
+>>> names
+['vardhan', 'ramu', 'jayanth']
+>>> names = tuple(input("Enter the names: ").split())
+Enter the names: vardhan ramu jayanth
+>>> names
+('vardhan', 'ramu', 'jayanth')
+>>> names = set(input("Enter the names: ").split())
+Enter the names: vardhan ramu jayanth
+>>> names
+{'jayanth', 'ramu', 'vardhan'}
+>>> marks = input().split()
+12 52 49 65 45
+>>> marks
+['12', '52', '49', '65', '45']
+>>> map(int,marks)
+<map object at 0x000002251FDD2CC0>
+>>> list(map(int,marks))
+[12, 52, 49, 65, 45]
+>>> marks = list(map(int,input("Enter the marks").split()))
+Enter the marks12 52 49 65 45
+>>> marks
+[12, 52, 49, 65, 45]
+>>> marks = set(map(int,input("Enter the marks").split()))
+Enter the marks12 52 49 65 45
+>>> marks
+{65, 12, 45, 49, 52}
+>>> marks = tuple(map(int,input("Enter the marks").split()))
+Enter the marks65, 12, 45, 49, 52
+Traceback (most recent call last):
+  File "<pyshell#37>", line 1, in <module>
+    marks = tuple(map(int,input("Enter the marks").split()))
+ValueError: invalid literal for int() with base 10: '65,'
+>>> marks = tuple(map(int,input("Enter the marks").split()))
+Enter the marks12 52 49 65 45
+... marks
+>>> marks
+(12, 52, 49, 65, 45)
+>>> a,b=[1,2]
+>>> a
+1
+>>> b
+2
+>>> a,b,c=(1,12.3,"str")
+a
+1
+b
+12.3
+c
+'str'
+email,password = input("Enter the email,password: ").split()
+Enter the email,password: Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    email,password = input("Enter the email,password: ").split()
+ValueError: not enough values to unpack (expected 2, got 1)
+email,password = input("Enter the email,password: ").split()
+Enter the email,password: vardhan 90
+email
+'vardhan'
+password
+'90'
+names,marks = input("Enter the name and marks: ").split()
+Enter the name and marks: vardhan 90
+name
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    name
+NameError: name 'name' is not defined. Did you mean: 'names'?
+names
+'vardhan'
+marks
+'90'
+int(marks)
+90
+90
+90
+a,b,c = list(map(int,input().split()))
+12 34 56
+a
+12
+b
+34
+c
+56
