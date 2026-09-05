@@ -1,0 +1,308 @@
+Python 3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+#Strings
+s = "Codegnan"
+s
+'Codegnan'
+type(s)
+<class 'str'>
+s = ''
+s
+''
+a = 'python'
+a
+'python'
+b = 'programming'
+b
+'programming'
+a+b
+'pythonprogramming'
+fname = vardhan
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    fname = vardhan
+NameError: name 'vardhan' is not defined
+fname = 'Vardhan'
+lname = 'mamidala'
+fname+lname
+'Vardhanmamidala'
+fname + lname
+'Vardhanmamidala'
+a*10
+'pythonpythonpythonpythonpythonpythonpythonpythonpythonpython'
+'*'*20
+'********************'
+'-Codegnan-'
+'-Codegnan-'
+'-codegnan-'*10
+'-codegnan--codegnan--codegnan--codegnan--codegnan--codegnan--codegnan--codegnan--codegnan--codegnan-'
+#Strings
+
+
+
+names = 'vardhan' 'ramu' 'jayanth'
+names
+'vardhanramujayanth'
+names = 'vardhan ramu jayanth'
+names
+'vardhan ramu jayanth'
+s = 'Codegnan'
+s
+'Codegnan'
+s[7]
+'n'
+s[6]
+'a'
+s[5]
+'n'
+s[4]
+'g'
+s[3]
+'e'
+s[2]
+'d'
+s[1]
+'o'
+s[0]
+'C'
+s[-1]
+'n'
+s[-4]
+'g'
+s[-7]
+'o'
+names
+'vardhan ramu jayanth'
+name[:7}
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
+name(:7)
+SyntaxError: invalid syntax
+name[:7]
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    name[:7]
+NameError: name 'name' is not defined. Did you mean: 'fname'?
+names[:7]
+'vardhan'
+names[8:12]
+'ramu'
+names[13:19]
+'jayant'
+names[13:20]
+'jayanth'
+names[-1:-7]
+''
+names[-7:]
+'jayanth'
+names[-12:-8]
+'ramu'
+names[-7:]
+'jayanth'
+names[:-7]
+'vardhan ramu '
+names[:-5]
+'vardhan ramu ja'
+names[:-4]
+'vardhan ramu jay'
+names[-2]
+'t'
+names[:-2]
+'vardhan ramu jayan'
+names[:1]
+'v'
+names[:-1]
+'vardhan ramu jayant'
+names[::-1]
+'htnayaj umar nahdrav'
+names[-1:-9:-1]
+'htnayaj '
+names[:18]
+'vardhan ramu jayan'
+names
+'vardhan ramu jayanth'
+'vardhan' in names
+True
+'ramu' n name
+SyntaxError: invalid syntax
+'ramu' in names
+True
+'jayanth' in names
+True
+'vishnu' not in names
+True
+'a' in names
+True
+'s' in names
+False
+' v' in names
+False
+len(names)
+20
+ord('a')
+97
+ord('v')
+118
+ord('A')
+65
+ord('G')
+71
+chr('100')
+Traceback (most recent call last):
+  File "<pyshell#77>", line 1, in <module>
+    chr('100')
+TypeError: 'str' object cannot be interpreted as an integer
+chr(100)
+'d'
+che('40')
+Traceback (most recent call last):
+  File "<pyshell#79>", line 1, in <module>
+    che('40')
+NameError: name 'che' is not defined. Did you mean: 'chr'?
+chr('40')
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    chr('40')
+TypeError: 'str' object cannot be interpreted as an integer
+chr(40)
+'('
+chr(20)
+'\x14'
+chr(8)
+'\x08'
+'\x08'
+'\x08'
+chr(10)
+'\n'
+sorted(names)
+[' ', ' ', 'a', 'a', 'a', 'a', 'a', 'd', 'h', 'h', 'j', 'm', 'n', 'n', 'r', 'r', 't', 'u', 'v', 'y']
+max(names)
+'y'
+min(names)
+' '
+s = 'python programming language'
+s.upper()
+'PYTHON PROGRAMMING LANGUAGE'
+s.lower()
+'python programming language'
+s.swapcase()
+'PYTHON PROGRAMMING LANGUAGE'
+s.captalize()
+Traceback (most recent call last):
+  File "<pyshell#93>", line 1, in <module>
+    s.captalize()
+AttributeError: 'str' object has no attribute 'captalize'. Did you mean: 'capitalize'?
+s.capitalize()
+'Python programming language'
+s.casefold()
+'python programming language'
+s.title()
+'Python Programming Language'
+"STRAẞEMÁLAGAÅngströmCaf
+é".casefold()
+SyntaxError: unterminated string literal (detected at line 1)
+"STRAẞEMÁLAGAÅngströmCafé".casefold()
+'strassemálagaångströmcafé'
+s
+'python programming language'
+s.centre(50,'-')
+Traceback (most recent call last):
+  File "<pyshell#100>", line 1, in <module>
+    s.centre(50,'-')
+AttributeError: 'str' object has no attribute 'centre'. Did you mean: 'center'?
+s
+'python programming language'
+s.center(50,'-')
+'-----------python programming language------------'
+s.center(40,'*')
+'******python programming language*******'
+s.center(40,'.')
+'......python programming language.......'
+s.rjust(40,'.')
+'.............python programming language'
+s.ljust(40,'.')
+'python programming language.............'
+'123'.zfill(4)
+'0123'
+s
+'python programming language'
+s.find('python)
+       
+SyntaxError: unterminated string literal (detected at line 1)
+s.find('python')
+       
+0
+s.find('g')
+       
+10
+s.find('a')
+       
+12
+s.rfind('g')
+       
+25
+s.rfind('a')
+       
+24
+s.rfind('a')
+       
+24
+s.find('z')
+       
+-1
+s.index('a')
+       
+12
+s.index('z')
+       
+Traceback (most recent call last):
+  File "<pyshell#119>", line 1, in <module>
+    s.index('z')
+ValueError: substring not found
+s.count('e')
+       
+1
+s.count('m')
+       
+2
+>>> s
+...        
+'python programming language'
+>>> s.replace('o')
+...        
+Traceback (most recent call last):
+  File "<pyshell#123>", line 1, in <module>
+    s.replace('o')
+TypeError: replace() takes at least 2 positional arguments (1 given)
+>>> s.replace('o','1')
+...        
+'pyth1n pr1gramming language'
+>>> s.replace('m','4')
+...        
+'python progra44ing language'
+>>> s.replace('python','java')
+...        
+'java programming language'
+>>> s,maketrans('aeiou','#@$&*')
+...        
+Traceback (most recent call last):
+  File "<pyshell#127>", line 1, in <module>
+    s,maketrans('aeiou','#@$&*')
+NameError: name 'maketrans' is not defined
+>>> s.maketrans('aeiou','#@$&*')
+...        
+{97: 35, 101: 64, 105: 36, 111: 38, 117: 42}
+>>> s.translate(s.maketrans('aeiou','#@$&*'))
+...        
+'pyth&n pr&gr#mm$ng l#ng*#g@'
+>>> text = "Hello 🙂"
+...        
+>>> text.encode()
+...        
+b'Hello \xf0\x9f\x99\x82'
+>>> 
+>>> b'Hello \xf0\x9f\x99\x82'
+...        
+b'Hello \xf0\x9f\x99\x82'
+>>> b'Hello \xf0\x9f\x99\x82'.decode()
+...        
+'Hello 🙂'
