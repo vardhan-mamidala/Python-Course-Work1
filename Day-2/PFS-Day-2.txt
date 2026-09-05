@@ -1,0 +1,35 @@
+Token :A smallest unit in the program
+-----
+
+1.Identifier: It can be name of the variable, function, class
+2.Operator: special characters   
+3.Literals: values
+4.Keywords: predefined words
+5.Punctuators: special symbols like( (),;,{}, , ,:,.,\,@,)...
+
+Statements :A line of a code is statement
+----------
+Comments :To make the code readable and understand the code for the people
+#single line comment
+
+'''
+multi
+line
+comment
+'''
+
+Identifier
+----------
+1.Contains uppercase, lowercase, digits, _
+2.No special characters 
+3.It can start with uppercase, lowercase, _
+4.Keywords are not allowed
+5.Case sensitive
+
+Variable :It is a container it stores the values
+--------  
+
+Keywords:
+--------
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+35
